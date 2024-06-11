@@ -16,5 +16,8 @@ spec:
     namespace: guestbook-stg
     name: scni-eks-cluster
   syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true
     syncOptions:
       - CreateNamespace=true

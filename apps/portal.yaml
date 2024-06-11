@@ -13,5 +13,8 @@ spec:
     namespace: portal
     name: scni-eks-cluster
   syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true
     syncOptions:
       - CreateNamespace=true
