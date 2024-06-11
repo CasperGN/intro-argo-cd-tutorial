@@ -11,3 +11,10 @@ spec:
     path: apps
     repoURL: https://github.com/CasperGN/intro-argo-cd-tutorial # Update to your repo URL.
     targetRevision: HEAD
+  syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true
+    syncOptions:
+      - CreateNamespace=true
+  
